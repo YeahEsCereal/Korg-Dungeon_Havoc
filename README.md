@@ -13,3 +13,4 @@ Exploring and shopping are modes. Press Explore to start. Then, scroll to the di
 
 # EXTRA
 If you got damaged from a Pit Trap (for example), you have a chance to use a rope (if you had one). The rope will undo the damage. The chance ends when you press the Shop or Explore button.
+The number next to the current encounter is its "X" value.
