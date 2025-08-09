@@ -22,11 +22,11 @@ potioninuse = false
 potionusable = false
 shieldusable = false
 potionsend = false
-sfxselectmode = new Audio('/select.wav')
-sfxbuy = new Audio('/buy.mp3')
-sfxdiceroll = new Audio ('/diceroll.mp3')
-sfxuse = new Audio ('/use.mp3')
-sfxwin = new Audio ('/win.mp3')
+sfxselectmode = new Audio('select.wav')
+sfxbuy = new Audio('buy.mp3')
+sfxdiceroll = new Audio ('diceroll.mp3')
+sfxuse = new Audio ('use.mp3')
+sfxwin = new Audio ('win.mp3')
 itemlist = ['rope', 'caltrops', 'shield', 'potion', 'sword', 'armor']
 items = [0, 0, 0, 0, false, false]
 monsters = [ ['Pit Trap', 3], ['Skeleton', 2, 2, 1], ['Goblin', 3, 2, 2], ['Wraith', 5, 2, 4], ['Ogre', 4, 4, 7], ['Demon', 4, 6, 10] ]
@@ -332,3 +332,4 @@ function refreshuse() {
     }
 
 }
+
