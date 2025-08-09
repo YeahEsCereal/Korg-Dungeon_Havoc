@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Korg by Dungeon Havoc" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Korg by Dungeon Havoc</title>
+  </head>
+  <body>
+    <h1>KORG (by Dungeon Havoc)</h1>
+
+    <div class="choices txt">
+      <button onclick="openshop()" id="shopbutton">Shop</button>
+      <button onclick="exploremode()" id="explorebutton">Explore</button>
+      <button onclick="openuse()" id="usebutton">Use Item</button>
+    </div>
+
+    <p class="cs txt">(?)</p>
+
+    <div class="ubns txt">
+      <button class="ubn" id="rope" onclick="use('rope')">Use Rope</button>
+      <button class="ubn" id="caltrops" onclick="use('caltrops')">
+        Use Caltrops
+      </button>
+      <button class="ubn" id="shield" onclick="use('shield')">
+        Use Shield
+      </button>
+      <button class="ubn" id="potion" onclick="use('potion')">
+        Use Potion
+      </button>
+    </div>
+
+    <h3 id="hp" class="txt">HP (Health):</h3>
+    <p class="hptext txt" id="hp">20</p>
+
+    <h3 id="gp" class="gpheader">GP (Gold):</h3>
+    <p class="gptext txt" id="gp">0</p>
+
+    <h3 id="ce" class="txt">Current Encounter:</h3>
+    <p class="cetext txt" id="ce">?</p>
+
+    <h3 id="dice" class="txt">Dice</h3>
+    <div class="dicediv txt">
+      <button onclick="roll()" class="rollbutton">ROLL</button>
+      <p class="dicetext" id="dice">?</p>
+    </div>
+
+    <h3 id="shop" class="txt">Shop:</h3>
+    <p id="shop" class="txt">
+      2GP - Rope - Avoid trap once <br />2GP - Caltrops - Flee foe once
+      <br />3GP - Shield - Avoid DMG once <br />4GP - Potion - Heal D6 HP
+      <br />5GP - Sword - +1 to defeat foe <br />10GP - Armor - -1 DMG
+    </p>
+
+    <div class="sbns txt">
+      <button class="sbn" id="rope" onclick="buy('rope')">Buy Rope</button>
+      <button class="sbn" id="caltrops" onclick="buy('caltrops')">
+        Buy Caltrops
+      </button>
+      <button class="sbn" id="shield" onclick="buy('shield')">
+        Buy Shield
+      </button>
+      <button class="sbn" id="potion" onclick="buy('potion')">
+        Buy Potion
+      </button>
+      <button class="sbn" id="sword" onclick="buy('sword')">Buy Sword</button>
+      <button class="sbn" id="armor" onclick="buy('armor')">Buy Armor</button>
+    </div>
+
+    <h3 id="loc" class="txt">Location:</h3>
+    <p id="loc" class="txt">Ruins</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

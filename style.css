@@ -1,0 +1,165 @@
+* {
+    font-family: 'Cascadia Code', 'Arial', sans-serif;
+    transition: all 0.5s;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbn {
+    background-color: rgb(247, 78, 21);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 35vw;
+    height: 50px;
+    font-size: auto;
+}
+
+.sbn:hover {
+    background-color: rgb(255, 117, 60);
+}
+
+.sbn:active {
+    background-color: rgb(255, 151, 94);
+}
+
+.sbns {
+    display: none;
+    flex-direction: column;
+}
+
+.ubn {
+    background-color: rgb(15, 174, 202);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 35vw;
+    height: 50px;
+    font-size: auto;
+}
+
+.ubn:hover {
+    background-color: rgb(54, 213, 241);
+}
+
+.ubn:active {
+    background-color: rgb(88, 247, 255);
+}
+
+
+.ubns {
+    display: none;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+}
+
+#hp {
+    color: rgb(255, 31, 31);
+}
+
+#gp {
+    color: rgb(255, 199, 33);
+}
+
+#ce {
+    color: rgb(25, 170, 8);
+}
+
+#loc {
+    color: rgb(13, 201, 234);
+}
+
+#shop {
+    color: rgb(247, 146, 21);
+}
+
+div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    font-size: 125%;
+}
+
+.rollbutton {
+    display: none;
+}
+
+.rollbutton:hover {
+    background-color: rgb(39, 39, 39);
+}
+
+.rollbutton:active {
+    background-color: rgb(73, 73, 73);
+}
+
+#shopbutton {
+    background-color: rgb(247, 146, 21);
+    display: none;
+}
+
+#shopbutton:hover {
+    background-color: rgb(255, 185, 60);
+}
+
+#shopbutton:active {
+    background-color: rgb(255, 219, 94);
+}
+
+#explorebutton {
+    background-color: rgb(25, 170, 8);
+}
+
+#explorebutton:hover {
+    background-color: rgb(64, 209, 47);
+}
+
+#explorebutton:active {
+    background-color: rgb(98, 243, 81);
+}
+
+#usebutton {
+    background-color: rgb(15, 174, 202);
+    display: none;
+}
+
+#usebutton:hover {
+    background-color: rgb(54, 213, 241);
+}
+
+#usebutton:active {
+    background-color: rgb(88, 247, 255);
+}
