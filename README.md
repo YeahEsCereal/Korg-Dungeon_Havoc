@@ -7,3 +7,9 @@ CreatorsHome (Pixabay)
 u_qpfzpydtro (Pixabay)
 Mixkit
 ..and others on Pixabay
+
+# HOW TO PLAY ON THIS SITE
+Exploring and shopping are modes. Press Explore to start. Then, scroll to the dice where you roll. (The dice face is displayed as a number). The rest will happen automatically.
+
+# EXTRA
+If you got damaged from a Pit Trap (for example), you have a chance to use a rope (if you had one). The rope will undo the damage. The chance ends when you press the Shop or Explore button.
