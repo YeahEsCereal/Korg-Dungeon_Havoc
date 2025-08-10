@@ -1,11 +1,3 @@
-// TODO Add sound effects (1)
-// TODO Playtesting, bug-fixing, advertising, and feedback (2)
-
-// * NEW: e.g. If you got damaged from a pit trap, you'll have a chance to use the rope
-// * And that chance ends when you press the Shop or Explore button
-// * When you use the rope, the damage is undone
-// ? Make items usable at the right times (1) (POSSIBLY DONE)
-
 hp = 20
 gp = 0
 dice = 0
@@ -22,11 +14,11 @@ potioninuse = false
 potionusable = false
 shieldusable = false
 potionsend = false
-sfxselectmode = new Audio('select.wav')
-sfxbuy = new Audio('buy.mp3')
-sfxdiceroll = new Audio ('diceroll.mp3')
-sfxuse = new Audio ('use.mp3')
-sfxwin = new Audio ('win.mp3')
+sfxselectmode = new Audio('/web/korg/select.wav')
+sfxbuy = new Audio('/web/korg/buy.mp3')
+sfxdiceroll = new Audio ('/web/korg/diceroll.mp3')
+sfxuse = new Audio ('/web/korg/use.mp3')
+sfxwin = new Audio ('/web/korg/win.mp3')
 itemlist = ['rope', 'caltrops', 'shield', 'potion', 'sword', 'armor']
 items = [0, 0, 0, 0, false, false]
 monsters = [ ['Pit Trap', 3], ['Skeleton', 2, 2, 1], ['Goblin', 3, 2, 2], ['Wraith', 5, 2, 4], ['Ogre', 4, 4, 7], ['Demon', 4, 6, 10] ]
@@ -212,7 +204,7 @@ function lose() {
     })
     document.querySelector('h1').innerHTML = 'You Lose!'
     document.querySelector('h1').style.color = 'rgb(255, 31, 31)'
-    document.querySelector('.gpheader').innerHTML = `GP (Gold): ${String(hp)}`
+    document.querySelector('.gpheader').innerHTML = `GP (Gold): ${String(gp)}`
 }
 
 function win() {
@@ -221,7 +213,7 @@ function win() {
     })
     document.querySelector('h1').innerHTML = 'You Win!'
     document.querySelector('h1').style.color = 'rgb(25, 170, 8)'
-    document.querySelector('.gpheader').innerHTML = `GP (Gold): ${String(hp)}`
+    document.querySelector('.gpheader').innerHTML = `GP (Gold): ${String(gp)}`
     sfxwin.load()
     sfxwin.play()
 }
@@ -330,6 +322,4 @@ function refreshuse() {
         document.querySelector('.ubns').style.display = 'none'
         document.querySelector('#usebutton').style.display = 'none'
     }
-
 }
-
